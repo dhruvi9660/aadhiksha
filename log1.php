@@ -23,6 +23,7 @@
             echo "<h1>Login successful</h1>";
             echo "<center><button><a class='btn btn-primary btn-xl text-uppercase js-scroll-trigger' href='http://localhost/aadhiksha/org_donation.php?u_name=$username'>proceed to donation page</a></button></center>";
             echo "<center><button><a href='main.php'>Back to main page</a></button></center><br><br>"; 
+            echo "<center><button><a href='http://localhost/aadhiksha/org_see_donations.php?u_name=$username''>see donations</a></button></center><br><br>";
             
              
         }  

@@ -20,6 +20,7 @@ $sql =  "UPDATE organisation SET org_location='$loc',org_interest='$int' WHERE o
 
 if($conn->query($sql)==TRUE){
     echo "<h1><center>SUCCESSFUL!!!</center></h1>";
+    echo "";
 }
 else{
     echo "Error". $sql . "<br>" . $conn->error;
