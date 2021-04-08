@@ -40,7 +40,8 @@ body {
         if($count == 1){  
             echo "<h1>Login successful</h1>";
             echo "<center><button><a class='btn btn-primary btn-xl text-uppercase js-scroll-trigger' href='http://localhost/aadhiksha/donor_donation.php?u_name=$username'>proceed to donation page</a></button></center>";
-            echo "<center><button><a href='main.php'>Back to main page</a></button></center><br><br>";  
+            echo "<center><button><a href='main.php'>Back to main page</a></button></center><br><br>"; 
+            echo "<center><button><a href='certificate.php?u_name=$username'>get certifiicate</a></button></center><br><br>";
         }  
         else{  
             echo "<h1> Login failed. Invalid username or password.</h1> ";

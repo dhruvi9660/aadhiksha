@@ -12,7 +12,7 @@
     <h1>interests and location</h1>
     <?php
 $u_name=$_GET['u_name'];
-print "my" . $u_name . "is";
+
 echo
 "<form class='login-form' action='http://localhost/aadhiksha/d_don.php?u_name=$u_name' method='post'>
 
