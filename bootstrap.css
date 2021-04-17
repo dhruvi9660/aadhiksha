@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color:white;
+  background-color: white ;
 }
 .body1{
   background-color: linear-gradient(to bottom right,#003366,black,white);
@@ -85,6 +85,10 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  text-align: center;
+  color:black;
+  font-size: 300%;
+  font-family: 'cursive';
 }
 
 p {
@@ -364,10 +368,13 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
-  color: inherit;
+  
+  text-align: center;
+  color:black;
+  font-size: 300%;
+  font-family: cursive;
 }
 
 h1, .h1 {

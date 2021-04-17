@@ -1,0 +1,26 @@
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    color:black;
+    font-size: 300%;
+    font-family: cursive;
+}
+body {
+    font-family: 'Open Sans';
+    font-weight: 100%;
+    background-color: rgb(179, 171, 171);
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+td, th{
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 10px;
+  }
+tr:nth-child(even){
+    backgroud-color: #dddddd;
+  }
+
+

@@ -1,4 +1,24 @@
 
+<!DOCTYPE html>
+<head>
+<link href="bootstrap.css" rel="stylesheet" />
+<style>body{background-color:rgb(255, 204, 204);}</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="#" style="font-family: Brush script MT;font-size:250%;">
+    <img src="logo.png" width="60" height="60" class="d-inline-block align-top" alt=""style=" border-radius: 50%">
+    Aadhiksha
+  </a>
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ">
+      <li class="nav-item active">
+        <a class="nav-link" href="main.php"><b>Logout</b></a>
+      </li>
+</ul>
+</div>
+
+</nav>
 <?php      
       $host = "localhost";  
       $user = "root";  
@@ -20,23 +40,15 @@
           
         if($count == 1){ 
             
-            echo "<h1>Login successful</h1>";
-            echo "<center><button><a class='btn btn-primary btn-xl text-uppercase js-scroll-trigger' href='http://localhost/aadhiksha/org_donation.php?u_name=$username'>proceed to donation page</a></button></center>";
-            echo "<center><button><a href='main.php'>Back to main page</a></button></center><br><br>"; 
-            echo "<center><button><a href='http://localhost/aadhiksha/org_see_donations.php?u_name=$username''>see donations</a></button></center><br><br>";
+            echo "<br><h1 class='display-3'><center>Login successful</center></h1><br>";
+            echo "<center><a class='btn btn-primary btn-xl text-uppercase' href='http://localhost/aadhiksha/org_donation.php?u_name=$username'>proceed to donation page</a></center><br>"; 
+            echo "<center><a class='btn btn-primary btn-xl text-uppercase' href='http://localhost/aadhiksha/org_see_donations.php?u_name=$username''>see donations</a></center><br><br>";
             
              
         }  
         else{  
-            echo "<h1> Login failed. Invalid username or password.</h1> ";
-            echo "<center><button><a href='main.php'>Back to main page</a></button></center><br><br>";
+            echo "<br><h1 class='display-3'> Login failed. Invalid username or password.</h1> ";
         }     
 ?>
-<!DOCTYPE html>
-<head>
-<link rel="stylesheet" type="text/css" href="login.css"> 
-</head>
-<body>
-
 </body>
 </html>
