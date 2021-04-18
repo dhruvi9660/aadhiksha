@@ -29,6 +29,8 @@ echo
 
   <h3>Enter location:</h3>
   <input type='text' class='form-control' autofocus='true' required='true' placeholder=' Your location' name='location' />
+  <h3>Enter address of your organisation:</h3>
+  <input type='text' class='form-control' autofocus='true' required='true' placeholder=' Your address' name='address' />
 <h3>Which type of donation do your organisation wants?</h3>
   <input type='text' class='form-control' autofocus='true' required='true' placeholder='required donation' name='interest' /><br>
 
@@ -38,3 +40,4 @@ echo
 </body>
 </html>
 
+ 

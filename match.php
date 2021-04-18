@@ -34,20 +34,20 @@ if($conn->connect_error){
 else{
 
 $sql="
-SELECT organisation.org_name,organisation.org_location,organisation.org_interest from donar,organisation WHERE donar.d_location=organisation.org_location and donar.d_interest1=organisation.org_interest and donar.d_username='$u_name' and donar.reserved='no'";
+SELECT organisation.org_name,organisation.org_location,organisation.org_interest,organisation.org_address from donar,organisation WHERE donar.d_location=organisation.org_location and donar.d_interest1=organisation.org_interest and donar.d_username='$u_name' and donar.reserved='no'";
 $result = $conn->query($sql);
 $sql1="
-SELECT organisation.org_name,organisation.org_location,organisation.org_interest from donar,organisation WHERE donar.d_location=organisation.org_location and donar.d_interest2=organisation.org_interest and donar.d_username='$u_name' and donar.reserved='no'";
+SELECT organisation.org_name,organisation.org_location,organisation.org_interest,organisation.org_address from donar,organisation WHERE donar.d_location=organisation.org_location and donar.d_interest2=organisation.org_interest and donar.d_username='$u_name' and donar.reserved='no'";
 $result1=$conn->query($sql1);
 $sql2="
-SELECT organisation.org_name,organisation.org_location,organisation.org_interest from donar,organisation WHERE donar.d_location=organisation.org_location and donar.d_interest3=organisation.org_interest and donar.d_username='$u_name'and donar.reserved='no'";
+SELECT organisation.org_name,organisation.org_location,organisation.org_interest,organisation.org_address from donar,organisation WHERE donar.d_location=organisation.org_location and donar.d_interest3=organisation.org_interest and donar.d_username='$u_name'and donar.reserved='no'";
 $result2=$conn->query($sql2);
 
 if ($result->num_rows > 0){
 echo "<br><table class='table'>";
 echo "<thead class='thead-light'><th><b>Organisation Names</th><th>location</th><th>interest</th><th>Address</th></thead>";
   while($row = $result->fetch_assoc()){
-    echo"<tr><td>" . $row["org_name"] . "</td><td>" . $row["org_location"] . "</td><td>" . $row["org_interest"] . "</td></tr>";
+    echo"<tr><td>" . $row["org_name"] . "</td><td>" . $row["org_location"] . "</td><td>" . $row["org_interest"] . "</td><td>" . $row["org_address"] . "</td></tr>";
   }
   echo "</table>";
 } 
@@ -55,7 +55,7 @@ else if($result1->num_rows > 0){
   echo "<br><table class='table'>";
   echo "<thead class='thead-light'><th><b>Organisation Names</th><th>location</th><th>interest</th><th>Address</th></thead>";
   while($row = $result1->fetch_assoc()){
-    echo"<tr><td>" . $row["org_name"] . "</td><td>" . $row["org_location"] . "</td><td>" . $row["org_interest"] . "</td></tr>";
+    echo"<tr><td>" . $row["org_name"] . "</td><td>" . $row["org_location"] . "</td><td>" . $row["org_interest"] . "</td><td>" . $row["org_address"] . "</td></tr>";
   }
   echo "</table>";
   echo "<h3 class='display-4'>you have been allotted your second choice as first choice was not avaliable</h3>";
@@ -64,7 +64,7 @@ else if($result2->num_rows > 0){
   echo "<br><table class='table'>";
   echo "<thead class='thead-light'><th><b>Organisation Names</th><th>location</th><th>interest</th><th>Address</th></thead>";
   while($row = $result2->fetch_assoc()){
-    echo"<tr><td>" . $row["org_name"] . "</td><td>" . $row["org_location"] . "</td><td>" . $row["org_interest"] . "</td></tr>";
+    echo"<tr><td>" . $row["org_name"] . "</td><td>" . $row["org_location"] . "</td><td>" . $row["org_interest"] . "</td><td>" . $row["org_address"] . "</td></tr>";
   }
   echo "</table>";
   echo "<h3 class='display-4'>you have been allotted your third choice as first and second choices were not avaliable</h3>";

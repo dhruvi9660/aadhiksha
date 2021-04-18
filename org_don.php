@@ -25,7 +25,7 @@ $u_name=$_GET['u_name'];
 
 $loc=$_POST['location'];
 $int=$_POST['interest'];
-
+$add=$_POST['address'];
 $servername="localhost";
 $username="root";
 $password="";
@@ -36,7 +36,7 @@ $conn = new mysqli($servername,$username,$password,$dbname);
 if($conn->connect_error){
     die("Connection failed:" . $conn->connect_error);
 }
-$sql =  "UPDATE organisation SET org_location='$loc',org_interest='$int' WHERE org_username='$u_name'";
+$sql =  "UPDATE organisation SET org_location='$loc',org_address='$add',org_interest='$int' WHERE org_username='$u_name'";
 
 if($conn->query($sql)==TRUE){
     echo "<div class='container'><br><h1 class='display-3'>SUCCESSFUL!!!<br>your preferences are entered successfully</h1><br><br>";
