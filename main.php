@@ -42,9 +42,11 @@
                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#Login" id="navbardrop" data-toggle="dropdown">Login</a>
                                 <div class="dropdown-menu">
                                 <a class="dropdown-item" href="login_org.php">For organization</a>
-                                <a class="dropdown-item" href="login_donor.php">For donor </a></div></li>
+                                <a class="dropdown-item" href="login_donor.php">For donor </a>
+                                <a class="dropdown-item" href="login_admin.php">For admin </a></div></li>
                             
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href='faqs.php'>FAQs</a></li>
                     </ul>
                 </div>
             </div>

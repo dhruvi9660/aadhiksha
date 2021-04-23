@@ -56,7 +56,9 @@ if ($result->num_rows > 0){
       "<div class='container'><form class='form-group' action='#' method='post'><br><br>
       <p style='font-size: 1.75rem;'>if you have received donation from any of these donars then please enter their name.</p>
       <input type='text'class='form-contol'  autofocus='true' required='true' placeholder='donor name' name='donor_name' /><br><br>
-      <button type='submit' value='submit' class='btn btn-primary btn-xl text-uppercase form-control ' name='submit' >Submit</button></form></div>";
+      <button type='submit' value='submit' class='btn btn-primary btn-xl text-uppercase form-control' name='submit' >Submit</button></form></div>";
+     
+
       if(isset($_POST['submit'])){
         $donor_name=$_POST['donor_name']; 
         $sql3="UPDATE donar SET org_received_don='yes' where donated_to='$org_name' and d_name='$donor_name'";
