@@ -76,6 +76,7 @@
                         </span>
                          <br> <br><br><br><br><br>
                         <h4 class="my-3">Animals shelter</h4>
+                        <p class="text-muted">“Saving one dog animal not change the world, but surely for that one animal, the world will change forever."</p>
                         <p class="text-muted"> </p>
                     </div>
                     <div class="col-md-4">
