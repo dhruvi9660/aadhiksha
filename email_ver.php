@@ -28,10 +28,14 @@ if($result4>0)
 $st=1;
 $result1=mysqli_query($conn,"UPDATE organisation SET status='$st' WHERE activationcode='$code'");
 echo "<h1 style='color:white;font-family:cursive;'>Your account is activated</h1>";
+echo "<br><center><a class='btn btn-primary btn-xl text-uppercase' href='http://localhost/aadhiksha/main.php'>Home</a></center><br><br>"; 
+
 }
 else
 {
-echo "<h1 style='color:white;font-family:cursive;'>Your account is already active,no need to activate again</h1>";
+echo "<h1 style='color:white;font-family:cursive;'>Your account is already active,no need to activate again</h1><br>";
+echo "<br> <br><center><a class='btn btn-primary btn-xl text-uppercase' href='http://localhost/aadhiksha/main.php'>Home</a></center><br><br>"; 
+
 }    
 
 }
@@ -39,8 +43,10 @@ echo "<h1 style='color:white;font-family:cursive;'>Your account is already activ
 <!DOCTYPE html>
 <head>
 <link rel="stylesheet" type="text/css" href="login1.css"> 
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 <body>
+
 
 </body>
 </html>

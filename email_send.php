@@ -52,10 +52,10 @@ else{
     echo "<h1 style='color:white;font-family:cursive;'>mail not sent</h1>";
 }
  }
-else
-{
-echo "<h1 style='color:white;font-family:cursive;'>data not inserted</h1>";
-}    
+ else
+ {
+ echo "<h2>data not inserted</h2>";
+ } 
 }
 }
 }

@@ -49,10 +49,7 @@ else{
     echo "<h2>mail not sent</h2>";
 }
  }
-else
-{
-echo "<h2>data not inserted</h2>";
-}    
+
 }
 }
 }
